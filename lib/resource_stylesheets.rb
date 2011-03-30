@@ -26,3 +26,5 @@ module ResourceStylesheets
     stylesheet_link_tag(*stylesheets)
   end
 end
+
+ActionView::Base.send(:include, ResourceStylesheets)
