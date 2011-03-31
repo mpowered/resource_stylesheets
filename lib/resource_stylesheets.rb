@@ -22,7 +22,7 @@ module ResourceStylesheets
     stylesheets += config[current_controller.to_s] if config
 
     stylesheets.compact! # In case no extra stylesheets were configured
-    stylesheets << {:cache => 'resource_stylesheets'} # Add cache option
+    stylesheets << {:cache => "#{current_controller}_stylesheets"} # Add cache option
     stylesheet_link_tag(*stylesheets)
   end
 end

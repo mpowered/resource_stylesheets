@@ -17,8 +17,7 @@ Example:
      - funky_side_bar
      - nifty_slider
 
-All a resource's stylesheets are combined into a stylesheet called
-'resource_stylesheets.css'
+All a resource's stylesheets are combined into a stylesheet named after the resource.
   
 
 == INSTALL:
